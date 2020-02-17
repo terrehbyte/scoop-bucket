@@ -1,0 +1,23 @@
+{
+    "homepage": "https://itch.io",
+    "description": "Install, update and play indie games",
+    "version": "25.4.0",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/itchio/itch/blob/master/LICENSE"
+    },
+    "url": "http://nuts.itch.zone/download",
+    "installer":
+    {
+        "file": "download",
+        "args": "--silent" 
+    },
+    "uninstaller":
+    {
+        "script":
+        [
+            "cd $env:LOCALAPPDATA\\itch\\",
+            ".\\itch-setup.exe --uninstall"
+        ]
+    }
+}
