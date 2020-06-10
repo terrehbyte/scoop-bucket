@@ -1,6 +1,6 @@
 {
-    "homepage": "https://vroid.com/studio",
-    "version": "0.8.2",
+    "homepage": "https://vroid.com/en/studio/",
+    "version": "0.9.5",
     "description": "VRoid Studio is an application to create 3D models of humanoid avatars (i.e. characters).",
 
     "license":
@@ -13,15 +13,18 @@
     {
         "64bit":
         {
-            "url":"https://download.vroid.com/dist/VRoidStudio-v0.8.2-win.zip"
+            "url":"https://download.vroid.com/dist/VRoidStudio-v0.9.5-win.zip"
         }
     },
-    "extract_dir": "VRoidStudio-v0.8.2-win",
+    "extract_dir": "VRoidStudio-v0.9.5-win",
     "bin": "VRoidStudio.exe",
     "shortcuts": [
         [
             "VRoidStudio.exe",
             "VRoid Studio"
         ]
-    ]
+    ],
+    "checkver": {
+        "regex": "VRoid Studio Beta v([\\d\\.]+)"
+    }
 }
